@@ -23,6 +23,9 @@
 import Foundation
 import Accelerate
 
+// We assume here that we use that key when channel created, other way it obviously will not work
+public let ActionCableChannelIdentifierKey: String = "id"
+
 internal let ActionCableSerialQueue = DispatchQueue(label: "com.ActionCableClient.SerialQueue", attributes: []);
 internal let ActionCableConcurrentQueue = DispatchQueue(label: "com.ActionCableClient.Conccurent", attributes: DispatchQueue.Attributes.concurrent)
 

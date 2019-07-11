@@ -55,7 +55,8 @@ client.onDisconnected = {(error: Error?) in
 let roomChannel = client.create("RoomChannel") //The channel name must match the class name on the server
 
 // More advanced usage
-let room_identifier = ["room_id" : identifier]
+// !You should use only "id" (ActionCableChannelIdentifierKey constant) key for channel identifier, otherwise it will not work
+let room_identifier = [ActionCableChannelIdentifierKey : identifier]
 let roomChannel = client.create("RoomChannel", identifier: room_identifier, autoSubscribe: true, bufferActions: true)
 
 ```

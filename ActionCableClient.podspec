@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ActionCableClient"
-  s.version          = "0.2.4"
+  s.version          = "0.2.5"
   s.summary          = "A Swift client for the Rails ActionCable WebSocket server."
   s.description      = <<-DESC
   ActionCable is a new WebSocket server being released with Rails 5 which makes it easy to add real-time features to your app. This Swift client makes it dead-simple to connect with that server, abstracting away everything except what you need to get going.
@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/Classes/**/*'
   s.frameworks = 'Foundation'
-  s.dependency 'Starscream', '~> 3.0.3'
+  s.dependency 'Starscream', '~> 3.0.6'
 end

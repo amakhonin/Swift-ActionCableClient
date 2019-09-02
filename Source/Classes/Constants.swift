@@ -27,7 +27,7 @@ import Accelerate
 public let ActionCableChannelIdentifierKey: String = "id"
 
 internal let ActionCableSerialQueue = DispatchQueue(label: "com.ActionCableClient.SerialQueue", attributes: []);
-internal let ActionCableConcurrentQueue = DispatchQueue(label: "com.ActionCableClient.Conccurent", attributes: DispatchQueue.Attributes.concurrent)
+internal let ActionCableConnectQueue = DispatchQueue(label: "com.ActionCableClient.SerialConnectQueue", attributes: []);
 
 internal enum Command {
     case subscribe
